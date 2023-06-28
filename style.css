@@ -6,7 +6,12 @@
 }
 
 a {
+  color: var(--color-main-black);
   text-decoration: none;
+}
+
+button {
+  background-color: var(--color-main-white);
 }
 
 /* 変数たち */
@@ -29,6 +34,95 @@ body {
   color: var(--color-main-black);
 }
 
+/* 商品カードのスタイルをここに書く */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.product-row {
+  display: flex;
+  gap: 48px;
+  align-self: stretch;
+}
+
+/* カード共通 */
+.product-name {
+  font-size: 18px;
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+}
+
+.product-price {
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.18px;
+}
+
+.product-from {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.14px;
+}
+
+.product-from-link {
+  font-size: 14px;
+  font-family: Noto Sans JP;
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+  letter-spacing: -0.14px;
+}
+
+.card-medium-add-basket-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 308px;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--color-main-black);
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+/* ミディアムカード */
+.card-medium {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-medium-product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-medium-product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.basket-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/icons/basket.svg);
+}
+
+.arrow-right {
+  font-size: 14px;
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-medium);
+}
+
+/* ーーーーーーーーーーーーーーーー */
+
+/* 以下は商品カードブロック以外のスタイル */
 /* ヘッダー */
 .header {
   display: flex;
@@ -67,7 +161,6 @@ body {
 
 .header-menu-item-cart-btn {
   padding: 12px 24px;
-  background-color: var(--color-main-white);
   border-radius: 100px;
   border: 1px solid var(--color-main-black);
   font-size: 18px;
