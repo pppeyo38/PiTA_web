@@ -102,7 +102,7 @@ body {
   grid-template-areas: "sidebar content";
   width: 100%;
   max-width: 1216px;
-  margin: 64px auto 0;
+  margin: 64px auto 98px;
 }
 
 /* サイドバーメニュー */
@@ -135,6 +135,24 @@ body {
 /* コンテンツ */
 .content-block {
   grid-area: content;
+}
+
+.content-heading {
+  margin-bottom: 27px;
+  font-size: 48px;
+  font-family: Noto Sans JP;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+}
+
+.content-heading::before {
+  display: inline-block;
+  content: "";
+  width: 36px;
+  height: 45px;
+  background-image: url(/icons/produce.svg);
+  margin-right: 12px;
 }
 
 /* フッター */
