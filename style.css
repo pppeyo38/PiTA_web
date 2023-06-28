@@ -95,3 +95,45 @@ body {
   content: "";
   background-image: url("/icons/basket.svg");
 }
+
+.article {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  gap: 64px;
+  grid-template-areas: "sidebar content";
+  width: 100%;
+  max-width: 1216px;
+  margin: 64px auto 0;
+}
+
+/* サイドバーメニュー */
+.sidebar-block {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+}
+
+.sidebar-item {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.14px;
+  cursor: pointer;
+}
+
+.sidebar-item.is-active {
+  margin-left: 13px;
+  list-style-type: disc;
+}
+
+/* コンテンツ */
+.content-block {
+  grid-area: content;
+}
