@@ -1,0 +1,23 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.product-list-item {
+  display: flex;
+  gap: 48px;
+}
+
+.card-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

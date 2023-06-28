@@ -42,7 +42,7 @@ body {
   gap: 48px;
 }
 
-.product-row {
+.product-list-row {
   display: flex;
   gap: 48px;
   align-self: stretch;
