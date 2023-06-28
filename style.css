@@ -34,7 +34,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding-top: 60px;
   background-color: var(--color-main-white);
 }
@@ -136,4 +135,53 @@ body {
 /* コンテンツ */
 .content-block {
   grid-area: content;
+}
+
+/* フッター */
+.footer {
+  padding-bottom: 120px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding-top: 48px;
+  border-top: 1px solid var(--color-main-black);
+}
+
+.footer-title {
+}
+
+.footer-title img {
+  margin-bottom: 16px;
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 18px;
+  font-family: Noto Sans JP;
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 48px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.link-item-label {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
 }
