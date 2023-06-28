@@ -22,6 +22,7 @@ a {
 
   /* font-family */
   --ff-inter: "Inter", sans-serif;
+  --ff-noto-sans: "Noto Sans JP", sans-serif;
 }
 
 body {
@@ -140,7 +141,7 @@ body {
 .content-heading {
   margin-bottom: 27px;
   font-size: 48px;
-  font-family: Noto Sans JP;
+  font-family: var(--ff-noto-san);
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.96px;
@@ -177,7 +178,7 @@ body {
 .footer-address {
   font-style: normal;
   font-size: 18px;
-  font-family: Noto Sans JP;
+  font-family: var(--ff-noto-san);
   font-weight: var(--fw-medium);
   line-height: 1.6;
   letter-spacing: -0.18px;
