@@ -7,13 +7,20 @@
     <!-- HTML文書の文字コードを指定 -->
     <meta charset="UTF-8" />
     <!-- サイトタイトル -->
-    <title>PiTA | 卓展2023</title>
+    <title>World Peas</title>
     <!-- デバイスごとのコンテンツ表示領域を設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- サイト説明 -->
     <meta name="description" content="UIUX卓 PiTAの紹介サイトです。" />
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Googleフォントの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- JavaScriptファイルの読み込み -->
     <!-- <script type="module" src="./index.js"></script> -->
   </head>
@@ -24,26 +31,34 @@
   <body>
     <!-- ヘッダー -->
     <header class="header">
-      <div class="header_inner">
-        <a href="/" class="header_title">
+      <div class="header-inner">
+        <a href="/" class="header-title">
           <img
-            src="/icons/PiTA.svg"
-            alt="PiTA"
-            width="69"
-            height="36"
+            src="/images/header_logo.svg"
+            alt="World Peas"
+            width="200"
+            height="32"
             decoding="async"
           />
         </a>
         <nav>
-          <ul class="header_nav-list">
+          <ul class="header-menu-list">
             <li>
-              <a href="/" class="header_nav-item">TOP</a>
+              <a href="/" class="header-menu-item">Shop</a>
             </li>
             <li>
-              <a href="/" class="header_nav-item">ABOUT</a>
+              <a href="/" class="header-menu-item">Newsstand</a>
             </li>
             <li>
-              <a href="/" class="header_nav-item">COURSE</a>
+              <a href="/" class="header-menu-item">Who we are</a>
+            </li>
+            <li>
+              <a href="/" class="header-menu-item">My Profile</a>
+            </li>
+            <li>
+              <button class="header-menu-item-cart-btn">
+                <span>Basket</span>
+              </button>
             </li>
           </ul>
         </nav>

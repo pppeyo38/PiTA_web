@@ -5,41 +5,93 @@
   box-sizing: border-box;
 }
 
-:root {
-  --main-black: #222;
-  --main-white: #fff;
+a {
+  text-decoration: none;
 }
 
+/* 変数たち */
+:root {
+  /* color */
+  --color-main-black: #000;
+  --color-main-white: #fff;
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* font-family */
+  --ff-inter: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--ff-inter);
+  color: var(--color-main-black);
+}
+
+/* ヘッダー */
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 64px;
-  background-color: var(--main-white);
+  padding-top: 60px;
+  background-color: var(--color-main-white);
 }
 
-.header_inner {
+.header-inner {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1216px;
+  height: 53px;
 }
 
-.header_title {
+.header-title {
   display: flex;
   align-items: center;
 }
 
-.header_nav-list {
+.header-menu-list {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
   list-style: none;
 }
 
-.header_nav-item {
+.header-menu-item {
+  color: var(--color-main-black);
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+}
+
+.header-menu-item-cart-btn {
+  padding: 12px 24px;
+  background-color: var(--color-main-white);
+  border-radius: 100px;
+  border: 1px solid var(--color-main-black);
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+  transition: all 0.4s;
+}
+
+.header-menu-item-cart-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.header-menu-item-cart-btn span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-menu-item-cart-btn span::before {
   display: inline-block;
-  padding: 12px;
-  color: var(--main-black);
-  text-decoration: none;
+  width: 20px;
+  height: 21px;
+  content: "";
+  background-image: url("/icons/basket.svg");
 }
