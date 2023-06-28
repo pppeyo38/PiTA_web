@@ -1,0 +1,78 @@
+--- 商品の写真タグ ---
+<img
+  src="/images/card/ここにjpgファイル名"
+  alt="cherry"
+  width="ミディアムは308、ラージは664"
+  height="ミディアムは308、ラージは363"
+  decoding="async"
+/>
+
+--- 商品の名前と値段タグ ---
+<h2 class="product-name">ここに名前</h2>
+<span class="product-price">ここに値段</span>
+
+--- 商品の生産地とリンクタグ ---
+<p class="product-from">生産地</p>
+<a href="/" class="product-from-link">
+  ここにリンク <span class="arrow-right">→</span>
+</a>
+
+--- カートに追加ボタンタグ ---
+<button class="add-basket-btn">
+  Add to basket
+  <span class="basket-icon"></span>
+</button>
+
+
+
+--- 商品リスト ---
+
+NAME: Rainier cherries
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Oceanside Farms
+
+NAME: Bartlett pears
+PRICE: $3.99/lb
+FROM: Grown in San Marin, CA by
+LINK: Bernal Growers
+
+NAME: Radishes
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Oceanside Farms
+
+NAME: Crimson Sweet melon
+PRICE: $3.99/lb
+FROM: Grown in Pasa Robles, CA by
+LINK: Castelao Farms
+
+NAME: Shiitakes
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Robinson Acres
+
+NAME: Greens mix
+PRICE: $3.99/lb
+FROM: Grown in San Marin, CA by
+LINK: Bernal Growers
+
+NAME: Yellow cherries
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Seabreeze Family Farm
+
+NAME: Icebox melon
+PRICE: $3.99/lb
+FROM: Grown in Pasa Robles, CA by
+LINK: Castelao Farms
+
+NAME: Comice pears
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Oceanside Farms
+
+NAME: Creminis
+PRICE: $3.99/lb
+FROM: Grown in San Diego, CA by
+LINK: Robinson Acres

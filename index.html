@@ -21,8 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Noto+Sans+JP:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
-    <!-- JavaScriptファイルの読み込み -->
-    <!-- <script type="module" src="./index.js"></script> -->
   </head>
 
   <!-- -------------------- -->
@@ -94,6 +92,61 @@
         <!-- コンテンツ -->
         <section class="content-block">
           <h1 class="content-heading">Produce</h1>
+          <!-- ここから下がカードエリア -->
+          <div class="product-list">
+            <div class="product-row">
+              <div class="card-wrap is-favorite">
+                <img
+                  src="/images/card/cherry.jpg"
+                  alt="cherry"
+                  width="308"
+                  height="308"
+                  decoding="async"
+                />
+                <div class="product-row">
+                  <h2 class="product-name">Rainier cherries</h2>
+                  <span class="product-price">$3.99/lb</span>
+                </div>
+                <div class="product-details">
+                  <p class="product-from">Grown in San Diego, CA by</p>
+                  <a href="/" class="product-from-link">
+                    Seabreeze Family Farm <span class="arrow-right">→</span>
+                  </a>
+                </div>
+                <button class="add-basket-btn">
+                  Add to basket
+                  <span class="basket-icon"></span>
+                </button>
+              </div>
+
+              <div class="card-wrap">
+                <img
+                  src="/images/card/pears.jpg"
+                  alt="cherry"
+                  width="664"
+                  height="363"
+                  decoding="async"
+                />
+                <div class="product-row">
+                  <h2 class="product-name">Bartlett pears</h2>
+                  <span class="product-price">$1.99/ea</span>
+                </div>
+                <div class="product-row">
+                  <div class="product-details">
+                    <p class="product-from">Grown in San Marin, CA by</p>
+                    <a href="/" class="product-from-link">
+                      Bernal Growers <span class="arrow-right">→</span>
+                    </a>
+                  </div>
+                  <button class="add-basket-btn">
+                    Add to basket
+                    <span class="basket-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カードエリア終わり -->
         </section>
       </article>
     </main>

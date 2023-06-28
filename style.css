@@ -6,7 +6,12 @@
 }
 
 a {
+  color: var(--color-main-black);
   text-decoration: none;
+}
+
+button {
+  background-color: var(--color-main-white);
 }
 
 /* 変数たち */
@@ -30,6 +35,100 @@ body {
   color: var(--color-main-black);
 }
 
+/* productカードのスタイルをここに書く */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.product-row {
+  display: flex;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.card-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+}
+
+.product-price {
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.18px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-from {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.14px;
+}
+
+.product-from-link {
+  font-size: 14px;
+  font-family: Noto Sans JP;
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+  letter-spacing: -0.14px;
+}
+
+.add-basket-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 308px;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--color-main-black);
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+.card-wrap::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-image: url(/icons/btn-favorite.svg);
+}
+
+.card-wrap.is-favorite::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-image: url(/icons/btn-favorite-active.svg);
+}
+/* ーーーーーproductカードーーーーーー */
+
+/* 以下は商品カードブロック以外のスタイル */
 /* ヘッダー */
 .header {
   display: flex;
@@ -68,7 +167,6 @@ body {
 
 .header-menu-item-cart-btn {
   padding: 12px 24px;
-  background-color: var(--color-main-white);
   border-radius: 100px;
   border: 1px solid var(--color-main-black);
   font-size: 18px;
@@ -154,6 +252,19 @@ body {
   height: 45px;
   background-image: url(/icons/produce.svg);
   margin-right: 12px;
+}
+
+.basket-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/icons/basket.svg);
+}
+
+.arrow-right {
+  font-size: 14px;
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-medium);
 }
 
 /* フッター */
