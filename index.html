@@ -7,13 +7,20 @@
     <!-- HTML文書の文字コードを指定 -->
     <meta charset="UTF-8" />
     <!-- サイトタイトル -->
-    <title>PiTA | 卓展2023</title>
+    <title>World Peas</title>
     <!-- デバイスごとのコンテンツ表示領域を設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- サイト説明 -->
     <meta name="description" content="UIUX卓 PiTAの紹介サイトです。" />
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Googleフォントの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
     <!-- JavaScriptファイルの読み込み -->
     <!-- <script type="module" src="./index.js"></script> -->
   </head>
@@ -23,12 +30,112 @@
   <!-- -------------------- -->
   <body>
     <!-- ヘッダー -->
-    <header></header>
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="header-title">
+          <img
+            src="/images/logo.svg"
+            alt="World Peas"
+            width="200"
+            height="32"
+            decoding="async"
+          />
+        </a>
+        <nav>
+          <ul class="header-menu-list">
+            <li>
+              <a href="/" class="header-menu-item">Shop</a>
+            </li>
+            <li>
+              <a href="/" class="header-menu-item">Newsstand</a>
+            </li>
+            <li>
+              <a href="/" class="header-menu-item">Who we are</a>
+            </li>
+            <li>
+              <a href="/" class="header-menu-item">My Profile</a>
+            </li>
+            <li>
+              <button class="header-menu-item-cart-btn">
+                <span>Basket</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- 記事 -->
-    <main></main>
+    <!-- コンテンツ -->
+    <main>
+      <article class="article">
+        <!-- サイドメニュー -->
+        <section class="sidebar-block">
+          <ul class="sidebar-menu">
+            <li class="sidebar-item is-active">New arrivals</li>
+            <li class="sidebar-item is-active">Bestsellers</li>
+            <li class="sidebar-item is-active">Staples</li>
+            <li class="sidebar-item is-active">Produce</li>
+          </ul>
+          <ul class="sidebar-menu">
+            <li class="sidebar-item is-active">Snacks</li>
+            <li class="sidebar-item is-active">Herbs &amp; Spices</li>
+            <li class="sidebar-item">Nuts &amp; Seeds</li>
+            <li class="sidebar-item is-active">Superfoords</li>
+            <li class="sidebar-item">Oils &amp; Vinegars</li>
+            <li class="sidebar-item">Grains</li>
+            <li class="sidebar-item">Coffee &amp; Tea</li>
+            <li class="sidebar-item">Cereal</li>
+            <li class="sidebar-item">Dried Fruit</li>
+            <li class="sidebar-item">Pasta</li>
+            <li class="sidebar-item">Flours &amp; Baking</li>
+          </ul>
+        </section>
+
+        <!-- コンテンツ -->
+        <section class="content-block">
+          <h1 class="content-heading">Produce</h1>
+        </section>
+      </article>
+    </main>
 
     <!-- フッター -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-title">
+          <img
+            src="/images/logo.svg"
+            alt="World Peas"
+            width="200"
+            height="32"
+            decoding="async"
+          />
+          <address class="footer-address">
+            5555 Produce Lane<br />Gardentown, CA 51512
+          </address>
+        </div>
+        <div class="footer-links">
+          <ul class="link-column">
+            <li class="link-item-label">Shop</li>
+            <li class="link-item-label">Who we are</li>
+            <li class="link-item-label">Newsstand</li>
+          </ul>
+          <ul class="link-column">
+            <li class="link-item-label">My Profile</li>
+            <li class="link-item-label">My basket</li>
+            <li class="link-item-label">My preferences</li>
+          </ul>
+          <ul class="link-column">
+            <li class="link-item-label">Contact us</li>
+            <li class="link-item-label">Our values</li>
+            <li class="link-item-label">Accessibility</li>
+          </ul>
+          <ul class="link-column">
+            <li class="link-item-label">Privacy policy</li>
+            <li class="link-item-label">Site map</li>
+            <li class="link-item-label">Terms and conditions</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
